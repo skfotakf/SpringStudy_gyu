@@ -27,12 +27,12 @@
 				success: function(data){
 					
 					if(data == 0){
-						alert("존재하지 않는 아이디입니다.")
+						alert("존재하지 않는 아이디입니다.");
 						
 					}else if(data == 1){
-						alert("비밀번호가 틀렸습니다.")
+						alert("비밀번호가 틀렸습니다.");
 					}else if(data == 2){
-						alert("로그인 성공")
+						alert("로그인 성공");
 						location.href = "index";
 					}
 				},

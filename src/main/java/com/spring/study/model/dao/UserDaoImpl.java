@@ -69,9 +69,16 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public int idCheck(String user_email) {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return session.selectOne(NAME_SPACE + "idCheck", user_email);
 	}
+
+	@Override
+	public int signUp(UserDto userDto) {
+		return session.insert(NAME_SPACE+"signUp", userDto);
+		
+	}
+	
 	
 	
 	

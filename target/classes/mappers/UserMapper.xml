@@ -9,7 +9,7 @@
 			user_email,
 			user_password,
 			user_name,
-			user_phoneNumber
+			user_phone
 		from
 			user_mst
 		where
@@ -32,4 +32,16 @@
 		where
 			user_email = #{user_email}
 	</select>
+	<insert id="signUp" parameterType="com.spring.study.model.dto.UserDto">
+		insert into
+			user_mst
+		values(
+			#{user_email},
+			#{user_password},
+			#{user_name},
+			#{user_phone},
+			now(),
+			now()
+		)
+	</insert>
 </mapper>

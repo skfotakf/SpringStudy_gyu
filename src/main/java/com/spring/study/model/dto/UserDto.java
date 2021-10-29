@@ -5,7 +5,7 @@ public class UserDto {
 	private String user_email;
 	private String user_password;
 	private String user_name;
-	private String user_phoneNumber;
+	private String user_phone;
 	public String getUser_email() {
 		return user_email;
 	}
@@ -24,16 +24,16 @@ public class UserDto {
 	public void setUser_name(String user_name) {
 		this.user_name = user_name;
 	}
-	public String getUser_phoneNumber() {
-		return user_phoneNumber;
+	public String getUser_phone() {
+		return user_phone;
 	}
-	public void setUser_phoneNumber(String user_phoneNumber) {
-		this.user_phoneNumber = user_phoneNumber;
+	public void setUser_phone(String user_phone) {
+		this.user_phone = user_phone;
 	}
 	@Override
 	public String toString() {
 		return "UserDto [user_email=" + user_email + ", user_password=" + user_password + ", user_name=" + user_name
-				+ ", user_phoneNumber=" + user_phoneNumber + "]";
+				+ ", user_phone=" + user_phone + "]";
 	}
 	
 	
